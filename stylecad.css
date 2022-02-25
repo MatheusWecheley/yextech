@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1b;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.register-box {
+    /*background-color: #1e1ebd;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh;
+    
+}
+
+.register-header {
+    padding: 10px;
+    background-color: #1f1f23;
+    display: block;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+    box-shadow: 3px 4px 10px black;
+}
+
+h2 {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.text, .loading {
+    color: #00f1e5;
+    animation: moved 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moved {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20vh);
+    }    
+}
+
+
+
+.form-hide {
+    animation: move 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+form input {
+    height: 30px;
+    width: 95%;
+    padding: 6px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    margin: 5px 0 5px;
+}
+
+form button {
+    background-color: #00f1e5;
+    width: 95%;
+    padding: 0.4rem;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-left: 8px;
+    transition: background .3s;
+}
+
+form button:hover {
+    background-color: #00f1e5;
+}
+
+@media (max-width: 733px) {
+    .register-box img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .register-header {
+        width: 80%
+    }
+
+}
+
+@media (max-width: 414px) {
+    .register-box img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .register-header {
+        width: 80%
+    }
+
+    form input {
+        width: 90%;
+        margin-left: 8px;
+    }
+
+
+}
+
+
+@media (max-width: 375px) {
+    .register-box img {
+        width: 65%;
+        height: 65%;
+    }
+
+    .register-header {
+        width: 80%
+    }
+
+    form input {
+        width: 90%;
+        margin-left: 8px;
+    }
+
+    label {
+        text-transform: uppercase;
+    }
+}
+
+
+@media (max-width: 365px) {
+    .register-box img {
+        height: 60%;
+        width: 60%;
+    }
+
+    .register-header {
+        width: 80%
+    }
+
+    form input {
+        width: 90%;
+        margin-left: 8px;
+    }
+}
+

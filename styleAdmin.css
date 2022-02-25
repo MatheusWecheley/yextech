@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1b;
+    box-shadow: 0px 7px 10px -1px #00f1e5;
+}
+
+.header button {
+    border: none;
+    border-radius: 16px;
+    background-color: #00f1e5;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-right: 35px;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.header button:hover {
+    background-color: #1c81e0;
+}
+
+h3 {
+    color: #00f1e5;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 40px 5px 40px;
+    font-size: 30px;
+}
+
+.bar {
+    width: 80%;
+    height: 3px;
+    background-color: #00f1e5;
+}
+
+.add-barber {
+    margin-top: 8px;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f23;
+}
+
+.form-register {
+    align-items: center;
+    background-color: #1f1f23;
+    box-shadow: 3px 4px 10px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-top: 50px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.add-barber form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.add-barber form label {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.add-barber form input {
+    padding: 8px;
+    width: 90%;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.add-barber form input[type="file"]{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.form-register form button {
+    background-color: #00f1e5;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    width: 40%;
+    align-items: center;    
+}
+

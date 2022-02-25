@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #1f1f23;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1b;
+    box-shadow: 0px 7px 10px -1px #00f1e5;
+}
+
+.header button {
+    border: none;
+    border-radius: 16px;
+    background-color: #00f1e5;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-right: 35px;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.header button:hover {
+    background-color: #1c81e0;
+}
+
+h3 {
+    color: #00f1e5;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    border-bottom: #dbdfe4 solid;
+}
+
+.choose-barber {
+    margin-top: 20px;
+}
+
+.choose-barber .barber1 img {
+    width: 150px;
+    height: 150px;
+}

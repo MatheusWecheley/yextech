@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAdmin.css">
+    <title>Admin | Yex</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-yex">
+                <img src="logo.yex.png" alt="Logo Yex">
+            </div>
+            <div class="username">
+                <button type="button" name="btn"><b>Matheus</b></button>
+            </div>
+        </div>
+
+        <div class="add-barber">
+            <div class="form-register">
+                <h3>Adicionar Barbeiros</h3>
+                <div class="bar"></div>
+                    <form method="get">
+                        <label>Nome da Barbearia: </label>
+                        <input type="text" class="name" required>
+                        <label>Dono da Barbearia: </label>
+                        <input type="text" class="barber" required>
+                        <label>Telefone da Barbearia: </label>
+                        <input type="tel" class="tell" required>
+                        <label>Email da Barbearia: </label>
+                        <input type="email" class="email" required>
+                        <label>Imagem da Barbearia</label>
+                        <input type="file" name="image">
+                        <button type="submit">CADASTRAR!</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/registerBarber.js"></script>
+</body>
+</html>
