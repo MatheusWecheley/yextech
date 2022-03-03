@@ -16,25 +16,36 @@
     box-shadow: 0px 7px 10px -1px #00f1e5;
 }
 
+span {
+    display: block;
+    margin-top: 50px;
+    margin-right: 50px;
+    color: white;
+    text-align:right;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
 .header button {
     border: none;
     border-radius: 16px;
-    background-color: #00f1e5;
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
     margin-right: 35px;
     padding: 15px;
+    margin-top: 20px;
     text-transform: uppercase;
     transition: 0.5s;
 
 }
 
 .header button:hover {
-    background-color: #1c81e0;
+    background-color: #00f1e5;
 }
 
 h3 {
-    color: #00f1e5;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     padding: 40px;

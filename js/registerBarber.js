@@ -1,4 +1,4 @@
-let  buttonRegister = document.querySelector("button[type='submit'")
+let  buttonRegister = document.getElementById('submit')
 
 function addBarber() {
     let nameBarber = document.querySelector(".name").value

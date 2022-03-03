@@ -1,0 +1,27 @@
+{
+  "name": "barberproject",
+  "version": "1.0.0",
+  "description": "Projeto de agendamentos de barbearia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merveruz/yextech.git"
+  },
+  "keywords": [
+    "Npm",
+    "barber",
+    "register"
+  ],
+  "author": "Matheus Wecheley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merveruz/yextech/issues"
+  },
+  "homepage": "https://github.com/Merveruz/yextech#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
