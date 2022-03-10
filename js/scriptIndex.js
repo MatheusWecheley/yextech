@@ -16,3 +16,15 @@ login.addEventListener('click', event => {
     invisible.classList.add('invisible')
     remove.classList.add('registerInv')
 })
+
+function databr(data) {
+    let newDate = new Date(data)
+    let day = 1
+    if (newDate.getMonth() < 10 ) {
+        newDate.setMonth(newDate.getMonth() + day)
+    }
+    let daysofweek = `${newDate.getDate()}/${newDate.getMonth()}`
+    const listdays = document.createElement('div')
+    listdays.innerHTML = daysofweek
+    
+}

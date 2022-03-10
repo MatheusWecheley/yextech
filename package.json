@@ -23,5 +23,9 @@
   "homepage": "https://github.com/Merveruz/yextech#readme",
   "dependencies": {
     "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
   }
 }

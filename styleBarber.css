@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #1f1f23;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1b;
+    box-shadow: 0px 7px 10px -1px #00f1e5;
+}
+
+.header button {
+    border: none;
+    border-radius: 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-right: 35px;
+    padding: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.header button:hover {
+    background-color: #00f1e5;
+}
+
+.barra {
+    margin-top: 20px;
+    background-color: #1f1f23;
+    width: 100%;
+    height: 2px;
+}
+
+.choose-hours {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.choose-hours .h3 {
+
+}
+
+.quarta {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.service {
+    padding: 50px;
+}
+
+.horariosQ {
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgb(68, 68, 68);
+    border-radius: 12px;
+    box-shadow: 1px 2px 8px -2px rgb(68,68,68);
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 14px; 
+    text-decoration: none;
+    padding: 14px;
+    transition: .3s;
+}
+
+.listday {
+    color: rgb(87, 87, 87);
+    cursor: pointer;
+    border: 1px solid;
+    border-color: rgb(0,166,174);
+    border-radius: 12px;
+    box-shadow: 1px 2px 8px -2px rgb(0,166,174);
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 14px; 
+    text-decoration: none;
+    padding: 14px;
+    transition: .2s;
+}
+
+.listday:hover {
+    color:black;
+    padding: 16px;
+    font-size: 23px;
+}
