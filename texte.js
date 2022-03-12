@@ -25,7 +25,7 @@ function teste() {
 
 console.log(days[1])
 
-addEventListener('click', teste)
+listDays.addEventListener('click', teste)
 addDays()
 
 
