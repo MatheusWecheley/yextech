@@ -1,34 +1,37 @@
 const listDays = document.getElementById('listdays')
 let data = new Date()
-let semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-let day1 = `${semana[data.getDay()]}\n\n ${data.getDate()}/0${data.getMonth() +1}`
-let day2 = `${semana[data.getDay()+1]}\n\n ${data.getDate()+1}/0${data.getMonth() +1}`
-let day3 = `${semana[data.getDay()+2]}\n\n ${data.getDate()+2}/0${data.getMonth() +1}`
-let day4 = `${semana[data.getDay()+3]}\n\n ${data.getDate()+3}/0${data.getMonth() +1}`
-let day5 = `${semana[data.getDay()-3]}\n\n ${data.getDate()+4}/0${data.getMonth() +1}`
-const days = [day1, day2, day3, day4, day5]
+let sday= new Date();
+const days = []
+const semana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+
+for(let i = 0; i < 7; i++) {
+    sday.setDate(data.getDate()+i)
+    let day = `${semana[sday.getDay()]}\n\n ${data.getDate()+i}/0${data.getMonth() +1}`
+    days.push(day)
+    if(i == 7){
+        break
+    }
+}
 
 
 function addDays() {
 
     for(let i = 0; i < days.length;i ++) {
         let list = document.createElement('li')
-        list.classList.add('listday')
+        list.classList.add(`listday${i}`)
         list.innerText = days[i]
         listDays.appendChild(list)
     }
 }
 
-function teste() {
-    console.log('teste')
-}
-
-console.log(days[1])
-
-listDays.addEventListener('click', teste)
 addDays()
 
+const eventclick = document.querySelector('.listday0')
+const horarios = document.querySelector('.quarta')
 
+eventclick.addEventListener('click', addclass => {
+    horarios.classList.add('teste')
+})
 
 
 

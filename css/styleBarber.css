@@ -55,12 +55,25 @@
 }
 
 .quarta {
+    transform: translateY(50vh);
     text-align: center;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 50px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.itens {
+    overflow: hidden;
+}
+
+.teste {
+    visibility: visible;
+    transform: translateY(-3vh);
+    transition: .6s;
 }
 
 .service {
@@ -68,7 +81,8 @@
 }
 
 .horariosQ {
-    color: rgb(87, 87, 87);
+    color: rgb(0, 0, 0);
+    background-color:#929292b2;
     cursor: pointer;
     border: 1px solid;
     border-color: rgb(68, 68, 68);
@@ -82,7 +96,7 @@
     transition: .3s;
 }
 
-.listday {
+.listday0, .listday1, .listday2, .listday3, .listday4, .listday5, .listday6{
     color: rgb(87, 87, 87);
     cursor: pointer;
     border: 1px solid;
@@ -98,7 +112,7 @@
     transition: .2s;
 }
 
-.listday:hover {
+.listday0:hover, .listday1:hover, .listday2:hover, .listday3:hover, .listday4:hover, .listday5:hover, .listday6:hover {
     color:black;
     padding: 16px;
     font-size: 23px;

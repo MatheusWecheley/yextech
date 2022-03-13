@@ -7,9 +7,9 @@ const register = document.querySelector('p')
     login.addEventListener("click", event => {
         event.preventDefault();
             form.classList.add("form-hide");
-            register.innerText = ("")
             loading.classList.add('loading');
+            text.classList.add('text');
             text.innerText = 'Carregando!'  
-            textLoading.classList.add('text-loading');
+            
 
     })
